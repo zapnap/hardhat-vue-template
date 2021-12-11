@@ -22,6 +22,7 @@ The project comes stock with a sample contract (the Greeter contract generated b
 First let's compile and deploy the simple Greet contract:
 
 ```shell
+npm install
 npx hardhat compile
 npx hardhat node
 npx hardhat run --network localhost scripts/deploy.ts
@@ -35,6 +36,7 @@ Once you've done this, you can start the web app by switching to the `frontend` 
 
 ```shell
 cd frontend
+npm install
 npm run serve
 ```
 
