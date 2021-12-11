@@ -28,10 +28,10 @@ const config: HardhatUserConfig = {
     hardhat: {
       chainId: 1337
     },
-    ropsten: {
-      url: `https://ropsten.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
-      accounts: [`0x${process.env.DEPLOYER_PRIVATE_KEY}`],
-    },
+    // ropsten: {
+    //   url: `https://ropsten.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+    //   accounts: [`0x${process.env.DEPLOYER_PRIVATE_KEY}`],
+    // },
   },
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
