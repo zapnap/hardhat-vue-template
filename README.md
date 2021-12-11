@@ -19,7 +19,7 @@ The project comes stock with a sample contract (the Greeter contract generated b
 
 ## Up and Running
 
-First let's compile and deploy the simple Greet contract:
+Copy the example env file to `.env` and modify it to suit your enviornment. Then compile and deploy the simple Greet contract:
 
 ```shell
 npm install
