@@ -191,7 +191,9 @@ const mutations = {
     state.chainId = id;
 
     if (value !== null) {
-      let chainSupported = addresses.Greeter[value] !== undefined;
+      const key = Object.keys(addresses)[0];
+      const supportedNetworkIds = Object.keys(addresses[key]);
+      let chainSupported = supportedNetworkIds.includes(value.toString());
       if (production) {
         if (testNetworkIds.includes(state.chainId)) {
           chainSupported = false;
