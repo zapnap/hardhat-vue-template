@@ -67,7 +67,8 @@ export default {
       const production = process.env.NODE_ENV === "production";
       const testIds = ["1337", "31337"];
 
-      let supportedIds = Object.keys(addresses.Greeter);
+      const key = Object.keys(addresses)[0];
+      let supportedIds = Object.keys(addresses[key]);
       let testNetworks: any[] = [];
 
       if (!production) {
