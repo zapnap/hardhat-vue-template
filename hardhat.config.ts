@@ -26,7 +26,7 @@ const config: HardhatUserConfig = {
   solidity: "0.8.4",
   networks: {
     hardhat: {
-      chainId: 1337
+      chainId: 1337,
     },
     // ropsten: {
     //   url: `https://ropsten.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
